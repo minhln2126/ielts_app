@@ -1,0 +1,18 @@
+@import "./variable";
+@import "./base";
+@import "./nav";
+@import "./login";
+@import "./footer";
+@import "./popup";
+@import "./page_forum";
+@import "./page_test";
+@import "./page_home";
+@import "./page_info";
+@import "./page_post";
+@import "./page_admin";
+@import "./profile";
+.App {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}

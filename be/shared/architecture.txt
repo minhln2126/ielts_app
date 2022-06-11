@@ -1,0 +1,7 @@
+config : danh sách file cấu hình, file data mẫu.
+controller : danh sách file controller để tiếp nhận và xử lý yêu cầu.
+middleware : Middleware là những đoạn mã trung gian nằm giữa request và response. Nó nhận các request, thi hành các lệnh tương ứng trên request đó. Sau khi hoàn thành nó response (trả về) hoặc chuyển kết quả ủy thác cho một Middleware khác trong hàng đợi.
+model : danh sách file model.
+route : danh sách route.
+shared : danh sách file tĩnh.
+config.env

@@ -1,0 +1,179 @@
+.login-container {
+  width: 80%;
+  height: 80%;
+  min-height: 470px;
+  min-width: 280px;
+  max-height: 700px;
+  max-width: 1500px;
+  display: flex;
+  border-radius: 0.5em;
+  overflow: hidden;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: $shadow;
+}
+.login-container > .img-container {
+  width: 50%;
+  display: block;
+  position: relative;
+  background-color: $background-blue;
+}
+.login-container > .form-container {
+  width: 50%;
+  position: relative;
+}
+.login-container > .img-container > img {
+  display: block;
+  width: 100%;
+  max-height: 100%;
+}
+.login-container > .form-container > .form {
+  width: 100%;
+}
+.form h2 {
+  margin-bottom: 0.5em;
+}
+.form > .input-container {
+  width: 80%;
+  margin: auto;
+}
+.form > .input-container > a {
+  color: $blue;
+  display: block;
+  margin-top: 1em;
+  font-size: 0.75em;
+}
+.form > .input-container > div {
+  margin-top: 1em;
+  font-size: 0.75em;
+}
+.form > .input-container > div button {
+  color: $blue;
+  font-size: 1em;
+}
+
+.form > .input-container > input,
+#login-btn,
+#signup-btn {
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 0.25em;
+}
+
+.form > .input-container > input {
+  margin-top: 1em;
+  height: 3.5em;
+  padding: 1em;
+  border: $border;
+}
+
+.form > .input-container > input:focus {
+  border: $blue solid 1px;
+}
+
+.form > .input-container > .row > div {
+  width: 60%;
+  text-align: right;
+}
+
+#login-btn,
+#signup-btn {
+  height: 3em;
+  color: white;
+  margin-top: 1em;
+  background-color: $blue;
+}
+
+#login-btn:hover,
+#signup-btn:hover {
+  background-color: $blue-light;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .login-container {
+    width: 95%;
+  }
+  .login-container > .img-container {
+    width: 0%;
+  }
+
+  .login-container > .form-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+  .form > .input-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .form > .input-container > .row {
+    flex-direction: column;
+  }
+
+  .form > .input-container > .row > div {
+    text-align: center;
+    width: 100%;
+  }
+
+  #signup-btn {
+    margin-top: 1em;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .login-container > .img-container {
+    width: 0%;
+  }
+
+  .login-container > .form-container {
+    width: 80%;
+    position: relative;
+    margin: auto;
+  }
+
+  .form > .input-container > .row {
+    flex-direction: column;
+  }
+
+  .form > .input-container > .row > div {
+    text-align: center;
+    width: 100%;
+  }
+
+  #signup-btn {
+    margin-top: 1em;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .login-container > .img-container {
+    width: 40%;
+  }
+
+  .login-container > .form-container {
+    width: 60%;
+  }
+
+  #signup-btn {
+    margin-top: 1em;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  .login-container {
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+}

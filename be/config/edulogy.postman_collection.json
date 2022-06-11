@@ -1,0 +1,497 @@
+{
+	"info": {
+		"_postman_id": "81e99473-c823-466a-b006-75b86ed97edd",
+		"name": "edulogy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create_test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://fathomless-castle-76283.herokuapp.com/api/test",
+					"protocol": "https",
+					"host": [
+						"fathomless-castle-76283",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fathomless-castle-76283.herokuapp.com/api/tests",
+					"protocol": "https",
+					"host": [
+						"fathomless-castle-76283",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_test_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fathomless-castle-76283.herokuapp.com/api/tests/60a0dac2efb9c32928dbf8e5",
+					"protocol": "https",
+					"host": [
+						"fathomless-castle-76283",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"tests",
+						"60a0dac2efb9c32928dbf8e5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_test",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwOWUwMWU3MTllMDQ0MjE1ODYxZmQyNSIsInJvbGUiOiJndWVzdCJ9LCJpYXQiOjE2MjA5NzE1NzAsImV4cCI6MTYyMDk3NTE3MH0.HHnNqtfFE8b8l0SY6jlMHCCzZvGb26Fqz7edgADGaog",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/tests",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"tests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\" : \"What is your name?\",\r\n    \"explanation\" : \"Khong biet\",\r\n    \"part\" : 5,\r\n    \"answers\" : [\r\n        {\r\n            \"content\" : \"My name is Thai\",\r\n            \"isTrue\" : true\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_question",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fathomless-castle-76283.herokuapp.com/api/questions",
+					"protocol": "https",
+					"host": [
+						"fathomless-castle-76283",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_question_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://fathomless-castle-76283.herokuapp.com/api/questions/607e87db4621d22be8cd6b2f",
+					"protocol": "https",
+					"host": [
+						"fathomless-castle-76283",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"questions",
+						"607e87db4621d22be8cd6b2f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update_question",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 607e87db4621d22be8cd6b2f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/questions/607e87db4621d22be8cd6b2f",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"questions",
+						"607e87db4621d22be8cd6b2f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"thailnv263@gmail.com\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Thai Vinh\",\r\n    \"email\": \"thailnv265@gmail.com\",\r\n    \"password\": \"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/users/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_user_info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/users/606096c2cfd0f510bc255f17",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users",
+						"606096c2cfd0f510bc255f17"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwOWUwMWU3MTllMDQ0MjE1ODYxZmQyNSIsInJvbGUiOiJndWVzdCJ9LCJpYXQiOjE2MjA5Njk5NTksImV4cCI6MTYyMDk3MzU1OX0.H8U5DvHdlk9L1HB-PZUwIqIHByrAcfjvGaq22iw7qEY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create_problem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwNzFhYmRkNDZhMjliNDFlNDQzMDhlOCIsInJvbGUiOiJhZG1pbiJ9LCJpYXQiOjE2MjMzMTc4NjQsImV4cCI6MTYyMzMyMTQ2NH0.JeAkxzp5oNd-jM33DZyNxW0Vesn0taafQS3oZAVN0Lw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Mọi người giải giúp câu này với ạ\",\r\n    \"content\" : \"What is your name ? \\nA Khoong biet\",\r\n    \"imgs\" : [\"https://i.ibb.co/0mP607R/341.png\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/problems",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"problems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_all_problem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local_api_url}}/api/problems",
+					"host": [
+						"{{local_api_url}}"
+					],
+					"path": [
+						"api",
+						"problems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_problem_byid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local_api_url}}/api/problems/60b30ef33657a3001578de7c",
+					"host": [
+						"{{local_api_url}}"
+					],
+					"path": [
+						"api",
+						"problems",
+						"60b30ef33657a3001578de7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reply_problem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwNzFhYmRkNDZhMjliNDFlNDQzMDhlOCIsInJvbGUiOiJhZG1pbiJ9LCJpYXQiOjE2MjMzMTc4NjQsImV4cCI6MTYyMzMyMTQ2NH0.JeAkxzp5oNd-jM33DZyNxW0Vesn0taafQS3oZAVN0Lw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\" : \"Khong biet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/problems/reply/60c1dd7fa11a3955c05fdeb7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"problems",
+						"reply",
+						"60c1dd7fa11a3955c05fdeb7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_comment_by_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local_api_url}}/api/comments/60b31b432431cb4ff48b93f3",
+					"host": [
+						"{{local_api_url}}"
+					],
+					"path": [
+						"api",
+						"comments",
+						"60b31b432431cb4ff48b93f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reply_comment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"Ha ha\",\r\n    \"user\": \"6071abdd46a29b41e44308e8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{local_api_url}}/api/comments/reply/60b31b432431cb4ff48b93f3",
+					"host": [
+						"{{local_api_url}}"
+					],
+					"path": [
+						"api",
+						"comments",
+						"reply",
+						"60b31b432431cb4ff48b93f3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like_problem",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYwNzFhYmRkNDZhMjliNDFlNDQzMDhlOCIsInJvbGUiOiJhZG1pbiJ9LCJpYXQiOjE2MjMzMTc4NjQsImV4cCI6MTYyMzMyMTQ2NH0.JeAkxzp5oNd-jM33DZyNxW0Vesn0taafQS3oZAVN0Lw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/problems/like/60c1dd7fa11a3955c05fdeb7",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"problems",
+						"like",
+						"60c1dd7fa11a3955c05fdeb7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "like_comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
